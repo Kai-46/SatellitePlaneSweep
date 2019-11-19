@@ -1,0 +1,19 @@
+{
+"work_dir": "/data2/kz298/core3d_result/aoi-d4-jacksonville/plane_sweep",
+"satellite_stereo_work_dir": "/data2/kz298/core3d_result/aoi-d4-jacksonville/",
+"ref_view": "0000_WV03_14OCT05_160138-P1BS-500648062040_01_P001.png",
+"src_views": [
+    "0001_WV03_14OCT05_160149-P1BS-500648061080_01_P001.png"
+],
+"plane_gap": 0.15,
+"window_radius": 5,
+"guided_filter_radius" : 9,
+"guided_filter_eps": 0.01,
+"filter_cost_above": 0.4,
+"run_mrf": false,
+"threshold": 2,
+"penalty": 0.03,
+"col_num_tiles": 1,
+"row_num_tiles": 1,
+"max_processes": 1
+}

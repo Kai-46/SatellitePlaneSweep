@@ -1,0 +1,10 @@
+build/*
+testResults/*
+output/*
+.project
+CMakeLists.txt.user
+scripts/.idea/
+scripts/__pycache__
+.idea/
+cmake-build-debug/
+discover_big_files.sh
