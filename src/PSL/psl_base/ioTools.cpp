@@ -16,8 +16,9 @@
 // along with PSL.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "ioTools.h"
+#include "exception.h"
+
 #include <fstream>
-#include <psl_base/exception.h>
 #include <boost/filesystem.hpp>
 #include <iomanip>
 

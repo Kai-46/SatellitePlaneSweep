@@ -27,9 +27,9 @@
 #include "psl_base/exception.h"
 #include "psl_cudaBase/cudaBackbone.cuh"
 #include "psl_stereo/cudaPlaneSweep.h"
-#include "psl_io/ioTools.h"
-#include "psl_io/visualizeGrid.h"
-#include "psl_io/ply.h"
+#include "psl_base/ioTools.h"
+#include "psl_base/gridVisualize.h"
+#include "psl_base/ply.h"
 
 namespace PSL {
 

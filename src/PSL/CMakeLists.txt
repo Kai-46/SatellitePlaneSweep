@@ -3,19 +3,14 @@ file(GLOB PSL_BASE_SRC_FILES
         "psl_base/*.h"
         )
 
-file(GLOB PSL_IO_SRC_FILES
-        "psl_io/*.cpp"
-        "psl_io/*.h"
+file(GLOB PSL_CUDA_BASE_SRC_FILES
+        "psl_stereo/*.cu"
+        "psl_stereo/*.cuh"
         )
 
 file(GLOB PSL_STEREO_SRC_FILES
         "psl_stereo/*.cpp"
         "psl_stereo/*.h"
-        )
-
-file(GLOB PSL_CUDA_BASE_SRC_FILES
-        "psl_stereo/*.cu"
-        "psl_stereo/*.cuh"
         )
 
 cuda_compile(PSL_CUDA_SRC_FILES
@@ -31,7 +26,6 @@ cuda_compile(PSL_CUDA_SRC_FILES
 
 add_library(PSL STATIC
         ${PSL_BASE_SRC_FILES}
-        ${PSL_IO_SRC_FILES}
         ${PSL_STEREO_SRC_FILES}
         ${PSL_CUDA_BASE_SRC_FILES}
         ${PSL_CUDA_SRC_FILES}

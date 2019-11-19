@@ -28,10 +28,10 @@
 
 #include "psl_base/exception.h"
 #include "psl_base/cameraMatrix.h"
-#include "psl_io/visualizeGrid.h"
-#include "psl_io/grid.h"
+#include "psl_base/gridVisualize.h"
+#include "psl_base/grid.h"
 #include "psl_stereo/cudaPlaneSweep.h"
-#include "psl_io/ioTools.h"
+#include "psl_base/ioTools.h"
 
 int main(int argc, char *argv[]) {
   std::string imageListFile;

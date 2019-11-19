@@ -19,7 +19,7 @@
 #define CUDAPLANESWEEP_H
 
 #include "psl_base/cameraMatrix.h"
-#include "psl_io/grid.h"
+#include "psl_base/grid.h"
 #include "psl_cudaBase/deviceBuffer.cuh"
 #include "psl_cudaBase/deviceImage.cuh"
 

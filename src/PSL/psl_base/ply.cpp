@@ -29,7 +29,7 @@
 //
 // Author: Johannes L. Schoenberger (jsch-at-demuc-dot-de)
 
-#include "psl_io/ply.h"
+#include "ply.h"
 #include "psl_base/exception.h"
 
 #include <fstream>
