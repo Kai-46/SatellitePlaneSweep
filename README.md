@@ -1,30 +1,30 @@
-Prerequisites
+Introduction
 --------------------------------
+This code is adapted from [PlaneSweepLib
+](https://www.cvg.ethz.ch/research/planeSweepLib/) in order to reconstruct with satellite images. It can also work on ground-level images.
 
-The code is written in C++ and CUDA. To use it you need a CUDA compatible Nvidia GPU.
+**Project page**: [https://kai-46.github.io/VisSat/](https://kai-46.github.io/VisSat/)
+
+Compilation
+--------------------------------
 The following libraries are required:
 
-GCC Toolchain on Linux </br>
-CMake </br>
-Nvidia CUDA </br>
+NVIDIA CUDA </br>
 Boost (system filesystem program_options) </br>
 OpenCV </br>
 Eigen3 </br>
 
-There is a helper script 'install_opencv.sh' to assist installing opencv on your computer.
+The script 'install_opencv.sh' aims to assist installing opencv on your computer.
 
-Instructions Linux
------------------------------
-
-mkdir build </br>
-cd build </br>
-cmake .. </br>
-make </br>
+Compile the program via:
+```{r, engine='bash', count_lines}
+mkdir build && cd build && cmake .. && make
+```
 
 General Usage
 -----------------------------
 ```{r, engine='bash', count_lines}
-SimplePlaneSweepStereo/build/bin/simplePinholePlaneSweep \
+SatellitePlaneSweep/build/bin/satellitePlaneSweep \
     --imageFolder {} \
     --imageList {} \
     --refImgId {} \
@@ -36,7 +36,7 @@ SimplePlaneSweepStereo/build/bin/simplePinholePlaneSweep \
     --filterCostVolume 1 --guidedFilterRadius 9 --guidedFilterEps 0.04 \
     --saveCostVolume {} \
     --debug 0 \
-    --saveBest 0 --filter 0 --filterThres {} \
+    --saveBest 1 --filter 1 --filterThres {} \
     --saveXYZMap {} \
     --savePointCloud {}
 ```
@@ -60,3 +60,7 @@ Brief explanation of the options
 Interfacing with Python
 -----------------------------
 scripts/binary_grid_io.py can be used to read the output files of the C++ program as numpy array.
+
+License
+-----------------------------
+This software uses the [3-clause BSD license](https://opensource.org/licenses/BSD-3-Clause).
