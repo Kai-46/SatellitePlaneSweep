@@ -8,3 +8,4 @@ scripts/__pycache__
 .idea/
 cmake-build-debug/
 discover_big_files.sh
+.DS_Store

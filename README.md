@@ -63,4 +63,4 @@ scripts/binary_grid_io.py can be used to read the output files of the C++ progra
 
 License
 -----------------------------
-This software uses the [3-clause BSD license](https://opensource.org/licenses/BSD-3-Clause).
+This software uses the [GPLv3 license](https://www.gnu.org/licenses/gpl-3.0.en.html).
