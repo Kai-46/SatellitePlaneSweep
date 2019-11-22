@@ -29,7 +29,7 @@ SatellitePlaneSweep/build/bin/satellitePlaneSweep \
     --imageList {} \
     --refImgId {} \
     --outputFolder {} \
-    --matchingCost census  \
+    --matchingCost {} \
     --windowRadius {} \
     --nX {} --nY {} --nZ {} \
     --firstD {} --lastD {} --numPlanes {} \
