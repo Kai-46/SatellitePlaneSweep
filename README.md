@@ -33,10 +33,10 @@ SatellitePlaneSweep/build/bin/satellitePlaneSweep \
     --windowRadius {} \
     --nX {} --nY {} --nZ {} \
     --firstD {} --lastD {} --numPlanes {} \
-    --filterCostVolume 1 --guidedFilterRadius 9 --guidedFilterEps 0.04 \
+    --filterCostVolume {} --guidedFilterRadius {} --guidedFilterEps {} \
     --saveCostVolume {} \
-    --debug 0 \
-    --saveBest 1 --filter 1 --filterThres {} \
+    --debug {} \
+    --saveBest {} --filter {} --filterThres {} \
     --saveXYZMap {} \
     --savePointCloud {}
 ```
@@ -46,6 +46,7 @@ Brief explanation of the options
 * imageList: a .txt file with each line being {img_id} {img_name} {fx fy cx cy s qw qx qy qz tx ty tz}; the number of lines should be equal to the number of reference and source images; {img_id} is an integer identifier, while {img_name} is the file name for the image inside {imageFolder}; {fx fy cx cy s qw qx qy qz tx ty tz} are the camera intrinsics and extrinsics
 * refImgId: specify which image in the {imageList} you would like to be the reference image; the other images inside {imageList} will automatically become the source images
 * outputFolder: where to save the program's output
+* matchingCost: "ncc" or "census"
 * nX, nY, nZ: they jointly define the normal direction of the sweeping planes in scene coordinate frame
 * firstD, lastD: constants of the first and last sweep plane, respectively
 * numPlanes: number of sweeping planes to be used
